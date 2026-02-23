@@ -15,6 +15,7 @@ import {
   CreditCard,
   User,
   Home,
+  Lock,
   Building,
   Calendar,
   Globe,
@@ -157,6 +158,11 @@ export default function OverviewTab() {
               label="Email Address"
               value={client.email as string}
               icon={Mail}
+            />
+            <Field
+              label="password"
+              value={client.password as string}
+              icon={Lock}
             />
             <Field
               label="Phone Number"
